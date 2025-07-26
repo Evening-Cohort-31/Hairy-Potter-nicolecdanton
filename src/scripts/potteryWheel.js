@@ -1,5 +1,5 @@
 
-export let potteryPrimaryKey = 1;
+export let potteryPrimaryKey = 1; //(had to look this up)
 
 export const makePottery = (shape, weight, height) => {
     const newPiece = {
@@ -9,7 +9,7 @@ export const makePottery = (shape, weight, height) => {
          height: height,
         }
     
-    potteryPrimaryKey++; // increment for the next piece
+    potteryPrimaryKey++; // increment for the next piece (had to look this up)
 
     return newPiece;
 }
