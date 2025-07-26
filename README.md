@@ -120,12 +120,12 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+   > I iterated through my forSalePottery array to develop the HTML for each piece of pottery. From there, i queried the DOM elecment for the class "potteryList" (I learned that querying by class uses different syntax than querying by ID). From there, I was able to use innerHTML to insert the generated HTML into the selected DOM element.
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/82ecc2a8e9ad43588f4323e167958de1
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > Modularizing code helps keep it organized, readable and more easy to debug. The makePottery module is just step one: create some pottery pieces on the wheel. Other tasks exist in separate modules because they are separate steps
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > The changes I would make would be to the potteryCatalog module. Instead of only including pottery that is not cracked in my forSalePottery array, i would make an "else" statement to say if piece.cracked = true, piece.price = 2.50 and forSalePottery.push(piece).
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > (https://www.loom.com/share/6d74497e91db4a12a0ef0b9d2a04fb70)
