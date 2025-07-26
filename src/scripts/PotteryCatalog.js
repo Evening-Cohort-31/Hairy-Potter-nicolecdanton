@@ -9,12 +9,15 @@ export const toSellOrNotToSell = (piece) => {
         piece.price = 20
         forSalePottery.push(piece)
     }
-
+    else {
+        piece.forSale = false;
+        piece.price = 0;
+    }
     return piece
 
 }
 
-export const usePottery = (forSalePottery) => {
-    cloneForSalePottery = structuredClone(forSalePottery)
+export const usePottery = () => {
+    const cloneForSalePottery = structuredClone(forSalePottery)
     return cloneForSalePottery
 }
